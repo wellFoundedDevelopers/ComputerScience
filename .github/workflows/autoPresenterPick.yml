@@ -1,0 +1,38 @@
+name: "Auto Presenter Picker"
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Auto Presenter Picker"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: install pip
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: pick presenters
+        run: |
+          python pick.py
+
+      - name: commit
+        run: |
+          git config --global user.name 'soopeach'
+          git config --global user.email 'hsjeon584@gmail.com'
+          git add -A
+          git commit -am "Pick: 발표자 선정!!!"
+
+      - name: push
+        run: |
+          git push

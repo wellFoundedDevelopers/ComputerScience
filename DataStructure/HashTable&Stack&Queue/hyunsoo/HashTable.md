@@ -64,7 +64,8 @@ Separate Chaining 방식은 동일한 버킷에 저장된 데이터들을 자료
 
 Open Addressing 방식은 Linked List와 같은 추가적인 메모리 공간을 사용하지 않고, hash table 배열의 빈 공간을 사용하는 방식이다.  
 추가적인 메모리 공간을 사용하지 않으므로 Separate Chaining 방식에 비해 메모리를 덜 사용함.  
-Linear Probing, Quadratic Probing, Double Hashing 등이 있음.
+Linear Probing, Quadratic Probing, Double Hashing 등이 있음.  
+충돌이 발생할 경우 버킷에 (key, value)를 같이 저장
 
 - Linear Probing
     - 충돌이 발생한 Hash를 기준으로 일정 수치(n)만큼 건너뛰며 비어있는 Hash를 찾음.

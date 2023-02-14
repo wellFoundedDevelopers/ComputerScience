@@ -1,0 +1,1 @@
+[LinkedList](https://glass-hedge-e9d.notion.site/Linked-List-1aaa2ebeb37b412ca41fac01ff33aa6b)

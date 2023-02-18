@@ -1,0 +1,1 @@
+[🧸 배열과 리스트 노션 링크](https://fine-count-d9c.notion.site/Array-vs-List-9778dce30dc940a5af887ab53415ee15)  

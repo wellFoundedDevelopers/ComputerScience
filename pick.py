@@ -42,7 +42,7 @@ def getRandomPresenters():
 
 presenters = getRandomPresenters()
 print(weightedMembers)
-result = (datetime.today() + timedelta(days=1)).strftime("| %Y년 %m년 %d일 | {}      | {}      |").format(presenters[0],
+result = (datetime.today() + timedelta(days=2)).strftime("| %Y년 %m년 %d일 | {}      | {}      |").format(presenters[0],
                                                                                                        presenters[1])
 file = open("README.md", 'a')
 file.write("{}\n".format(result))
